@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(20, 15, 30);
+}
+
+main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vh;
+    height: 100vh;
+
+}
+
+.top {
+    height: 3rem;
+    position: sticky;
+    top: 0;
+    padding-left: 11px;
+    padding-right: 11px;
+    place-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: rgb(5, 5, 10);
+    grid-column: 1/13;
+    grid-row: 1/3;
+}
+
+.top #shild {
+    background: rgb(8, 215, 65);
+    padding: 8px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.top #txt {
+    font-size: 30px;
+    color: rgb(8, 215, 65);
+}
+
+.top #btn {
+    background-color: rgb(4, 35, 15);
+    color: rgb(8, 215, 65);
+    border: 2px solid rgb(8, 215, 65);
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.box1 {
+    border: 3px solid rgb(17, 3, 3);
+    background-color: rgb(20, 15, 30);
+    border-radius: 30px;
+    padding: 20px;
+    place-items: center;
+    justify-content: space-around;
+    display: flex;
+    grid-column: 2/12;
+    grid-row: 3/7;
+}
+
+
+.radar {
+    overflow: hidden;
+    width: 248px;
+    height: 248px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+        inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+    background:
+        repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px),
+        linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+        linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+        linear-gradient(#333, #111);
+    background-size: 100%, 218px 218px, 218px 218px, 100%;
+}
+
+.sweep {
+position: relative;
+    top: 16px;
+    left: 16px;
+    border-right: solid 1px hsla(145, 50%, 40%, .3);
+    width: 108px;
+    height: 108px;
+    border-radius: 100% 0 0 0;
+    transform-origin: 100% 100%;
+    background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1));
+    animation: sweep 5s infinite linear;
+}
+
+@keyframes sweep {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.signal {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.signal h2 {
+    color: rgb(8, 215, 65);
+    font-size: 30px;
+}
+
+.signal p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: rgb(92, 91, 100);
+}
+
+.box1:hover {
+    border-color: rgb(8, 215, 65);
+}
+
+
+.box2 {
+    border: 3px solid rgb(17, 3, 3);
+    background-color: rgb(20, 15, 30);
+    border-radius: 30px;
+    padding: 20px;
+    /* place-items: center; */
+    justify-content: space-around;
+    /* display: flex; */
+    grid-row: 7/8;
+    grid-column: 2/8;
+}
+
+.box2 .press {
+    background-color: rgb(20, 15, 30);
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 .press button {
+    background-color: rgb(20, 15, 30);
+    border: 1px solid black;
+    block-size: 30px;
+    border-radius: 30px;
+    color: rgb(179, 176, 197);
+}
+
+.box2 .press button:hover {
+    border-color: rgb(8, 215, 65);
+}
+
+.box3 {
+    background-color: rgb(20, 15, 30);
+    border: 3px solid rgb(17, 3, 3);
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    grid-row: 8/11;
+    grid-column: 2/12;
+    gap: 10px;
+}
+
+.box3 .windos {
+    background-color: rgb(20, 15, 30);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.windos section{
+    justify-content: space-between;
+    border: 2px solid ;
+    border-left: 3px solid rgb(8, 215, 65);
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    
+}
+
+.windos .inside-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.inside-top button{
+    color: rgb(240, 12, 12);
+    background-color: rgb(147, 45, 76);
+}
+
+.windos p {
+    color: rgb(179, 176, 197);
+    justify-self: center;
+}
+
+.windos progress{
+    display: flex;
+    justify-self: end;
+    align-self: end;
+    
+}
+
+.box4{
+    background-color: rgb(20, 15, 30);
+
+    border: 3px solid rgb(17, 3, 3);
+    background-color: rgb(110, 36, 36);
+    border-radius: 30px;
+    padding: 10px;
+    /* place-items: center; */
+    justify-content: space-between;
+    display: flex;
+    grid-row: 11/12;
+    grid-column: 2/12;
+    /* gap: 10px; */
+    padding-right: 40%;
+    color: rgb(255, 0, 0);
+    
+}
+
+.footer{
+    background-color: rgb(20, 15, 30);
+    border-top: 2px solid rgb(179, 176, 197);
+    grid-row: 12/14;
+    grid-column: 1/13;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer button{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(5, 5, 26);
+    color: rgb(179, 176, 197);
+}
+
+#query{
+     right: 0;
+}
