@@ -115,6 +115,13 @@ position: relative;
 .box1:hover {
     border-color: rgb(8, 215, 65);
 }
+button:hover {
+    border-color: rgb(8, 215, 65);
+}
+
+.b1:hover {
+    border-color: rgb(8, 215, 65);
+}
 
 
 .box2 {
